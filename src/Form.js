@@ -9,11 +9,11 @@ export default class Form extends Component {
         <div class="input-field col s6">
           <input id="first_name" type="text" class="validate"/>
           <label for="first_name"
-            style={{color: 'red'}}>First Name</label>
+            style={{color: 'white', fontWeight: 'bold'}}>First Name</label>
         </div>
         <div class="input-field col s6">
           <input id="last_name" type="text" class="validate"/>
-          <label for="last_name">Last Name</label>
+          <label for="last_name" style={{color: 'white', fontWeight: 'bold'}}>Last Name</label>
         </div>
       </div>
       <div class="row">
@@ -24,7 +24,8 @@ export default class Form extends Component {
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input id="password" type="password" class="validate"/>
+          <input id="password" type="password" class="validate"
+          style={{backgroundColor: 'red'}}/>
           <label for="password">Password</label>
         </div>
       </div>

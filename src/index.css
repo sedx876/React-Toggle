@@ -4,7 +4,28 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: 1px;
+    background-image: linear-gradient(to right, 
+      #810020,
+      #900A22, 
+      #A41726,
+      #BA262B,
+      #CA302D);
+      /* background-image: url('./images/redBG3.jpg'); */
+      
+
 }
+
+/* body::after{
+  content: "";
+  background: url('./images/redBG.jpg');
+  opacity: .5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; 
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
