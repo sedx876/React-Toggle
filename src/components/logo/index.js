@@ -1,10 +1,11 @@
 import React from "react"
 import styled from "styled-components"
-import D2 from '../../images/D2.png'
+import D3 from '../../images/D3.png'
 
 const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
+  padding: 10px;
 `;
 
 const LogoImg = styled.div`
@@ -17,20 +18,21 @@ const LogoImg = styled.div`
 `;
 
 const LogoText = styled.h2`
-  font-size: 16px;
+  font-size: 20px;
   margin: 0;
-  margin-left: 4px;
+  margin-left: 2px;
   font-weight: 500;
   color: #CA302D;
   background-color: #000;
   text-shadow: 1px 1px 0px #ff0000;
+  
 `;
 
 export function Logo(props) {
   return (
     <LogoWrapper>
       <LogoImg>
-        <img src={D2} alt="Diablo2" />
+        <img src={D3} alt="Diablo2" />
       </LogoImg>
       <LogoText>Diablo2PlayrPad</LogoText>
     </LogoWrapper>

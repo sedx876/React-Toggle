@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const AccessibilityContainer = styled.div`
   display: flex;
-  margin-left: 5px;
+  margin-left: auto;
 `;
 
 const RegisterButton = styled.button`
@@ -21,6 +21,7 @@ const RegisterButton = styled.button`
     #A41726,
     #BA262B,
     #CA302D);
+    border: 2px solid #810020;
   transition: all 240ms ease-in-out;
   cursor: pointer;
   &:hover {
@@ -28,11 +29,11 @@ const RegisterButton = styled.button`
     background-color: #00c9ff;
   }
   &:not(:last-of-type) {
-    margin-right: 7px;
+    margin-right: 1px;
   }
   height: 35px;
   margin: 10px;
-  float: right;
+  
 `;
 
 const LoginButton = styled.button`
@@ -58,17 +59,17 @@ const LoginButton = styled.button`
     background-color: #00c9ff;
   }
   &:not(:last-of-type) {
-    margin-right: 7px;
+    margin-right: 1px;
   }
   height: 35px;
   margin: 10px;
-  float: right;
+  
 `;
 
 export function Accessibility(props) {
   return (
     <AccessibilityContainer>
-      <RegisterButton className='waves-effect waves-light' style={{float: 'right'}}>Register</RegisterButton>
+      <RegisterButton className='waves-effect waves-light'>Register</RegisterButton>
       <LoginButton className='waves-effect waves-light'>Login</LoginButton>
     </AccessibilityContainer>
   );

@@ -13,7 +13,6 @@ const NavbarContainer = styled.div`
   box-shadow: 0 1px 3px rgba(15, 15, 15, 0.13);
   display: flex;
   align-items: center;
-  padding: 0 1.5em;
   color: #CA302D;
   background-color: #000;
   text-shadow: .25px .25px 0px pink;
@@ -35,6 +34,7 @@ const RightSection = styled.div`
   width: 100%;
   background-color: #000;
   height: 60px;
+  
 `;
 
 export function Navbar(props) {

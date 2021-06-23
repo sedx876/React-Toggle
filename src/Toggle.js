@@ -16,7 +16,7 @@ export default class Toggle extends Component {
       <div>
         <button class="btn-floating btn-large waves-effect waves-light black" onClick={this.toggle}>
           <i class="fas fa-plus"
-            style={{color: 'red'}}></i></button>
+            style={{color: '#810020'}}></i></button>
         {this.state.on && this.props.children}
       </div>
     )
