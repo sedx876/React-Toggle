@@ -38,18 +38,20 @@ export const Row = styled.div`
 export const Link = styled.a`
   color: #fff;
   margin-bottom: 5px;
-  font-size: 18px;
+  font-size: 15px;
   text-decoration: none;
   &:hover {
       color: #810020;
       transition: 200ms ease-in;
   }
+  text-shadow: .5px .5px .5px gray;
 `;
 
 export const Title = styled.p`
-  font-size: 24px;
+  font-size: 20px;
   color: #810020;
   margin-bottom: 20px;
   font-weight: bold;
   text-decoration: underline;
+  text-shadow: .5px .5px .5px gray;
 `;
