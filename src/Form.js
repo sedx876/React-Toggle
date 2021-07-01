@@ -1,52 +1,93 @@
 import React, { Component } from 'react'
+import { MdTitle } from "react-icons/md"
+import { GiNinjaHeroicStance, 
+         GiElfHelmet,
+         GiSpikedShoulderArmor,
+         GiGauntlet,
+         GiLeatherArmor,
+         GiBeltBuckles,
+         GiArmoredPants,
+         GiSteeltoeBoots,
+         GiBracer,
+         GiNecklace,
+         GiDoorRingHandle,
+         GiGlobeRing,
+         GiSwitchWeapon,
+         GiBorderedShield,
+         GiFireGem,
+         GiCompanionCube,
+         GiSkills,
+         GiStabbedNote } from "react-icons/gi"
 
 export default class Form extends Component {
   render() {
     return (
-      <div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s6">
-          <input id="first_name" type="text" class="validate"/>
-          <label for="first_name"
-            style={{color: 'white', fontWeight: 'bold'}}>First Name</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate"/>
-          <label for="last_name" style={{color: 'white', fontWeight: 'bold'}}>Last Name</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input  id="disabled" type="text" class="validate"/>
-          <label for="disabled">Disabled</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="password" type="password" class="validate"
-          style={{backgroundColor: 'red'}}/>
-          <label for="password">Password</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="email" type="email" class="validate"/>
-          <label for="email">Email</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s12">
-          This is an inline input field:
-          <div class="input-field inline">
-            <input id="email_inline" type="email" class="validate"/>
-            <label for="email_inline">Email</label>
-            <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
-          </div>
-        </div>
-      </div>
+      <div>
+    <form>
+      <MdTitle id='icon'/>
+      <input id='formInput' className="form-control" rows='10' placeholder='Title of Your Build' name='title'/>
+      <GiNinjaHeroicStance id='icon'/>
+      <input id='formInput' className="form-control"  placeholder='Character Class EX: Demon Hunter..Necromancer...' name='characterKlass'  />
+      <br />
+
+      <GiElfHelmet id='icon'/>
+      <input id='formInput' className="form-control"  placeholder='Helm' name='helm'  />
+      <GiSpikedShoulderArmor id='icon'/>
+      <input id='formInput' className="form-control"  placeholder='Shoulders' name='shoulders'  />
+      <GiGauntlet id='icon'/>
+      <input id='formInput' className="form-control"  placeholder='Gloves' name='gloves'  />
+      <br />
+
+      
+      <GiLeatherArmor id='icon'/>
+      <input id='formInput' className="form-control"  placeholder='Chest Armor' name='chestArmor'  />
+      <GiBeltBuckles id='icon'/>
+      <input id='formInput' className="form-control"  placeholder='Belt' name='belt'  />
+      <GiArmoredPants id='icon'/>
+      <input id='formInput' className="form-control"  placeholder='Pants' name='pants'  />
+      <br />
+
+
+      <GiSteeltoeBoots id='icon'/>
+      <input id='formInput' className="form-control"  placeholder='Boots' name='boots'  />
+      <GiBracer id='icon'/>
+      <input id='formInput' className="form-control"  placeholder='Bracers' name='bracers'  />
+      <GiNecklace id='icon'/>
+      <input id='formInput' className="form-control"  placeholder='Amulet' name='amulet'  />
+      <br />
+
+      
+      <GiDoorRingHandle id='icon'/>
+      <input id='formInput' className="form-control"  placeholder='Ring 1' name='ring1'  />
+      <GiGlobeRing id='icon'/>
+      <input id='formInput' className="form-control"  placeholder='Ring 2' name='ring2'  />
+      <GiSwitchWeapon id='icon'/>
+      <input id='formInput' className="form-control"  placeholder='Weapon' name='weapon'  />
+      <br />
+
+
+      <GiBorderedShield id='icon'/>
+      <input id='formInput' className="form-control"  placeholder='Offhand' name='offhand'  />
+      <GiFireGem id='icon'/>
+      <textarea id='formInput' rows='10' className="form-control"  placeholder='Gems EX: Legendaries and Common Gems to Socket' name='gemNotes'  />
+      <GiCompanionCube id='icon'/>
+      <textarea id='formInput' className="form-control"  placeholder="Kanai's Cube What Legendary Powers to Extract" name='kanaisCube'  />
+      <br />
+
+      
+      <GiSkills id='icon'/>
+      <textarea id='formInput' className="form-control"  placeholder='Active Skills' name='activeSkills'  />
+      <GiSkills id='icon'/>
+      <textarea id='formInput' className="form-control"  placeholder='Passive Skills' name='passiveSkills' />
+      <GiStabbedNote id='icon'/>
+      <textarea id='formInput' className="form-control"  placeholder='Random Build Notes' name='generalBuildNotes'  />
+      <br />
+
+     
+      <br />
+      <input className="btn btn-outline-warning" type='submit'/>
     </form>
-  </div>
+    </div>
     )
   }
 }

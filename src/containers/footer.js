@@ -10,8 +10,8 @@ export function FooterContainer() {
                 <Footer.Column>
                 <Footer.Title>About Us</Footer.Title>
                     <Footer.Link href="#">Story</Footer.Link>
-                    <Footer.Link href="#">Clients</Footer.Link>
-                    <Footer.Link href="#">Testimonials</Footer.Link>
+                    <Footer.Link href="#">External Links</Footer.Link>
+                    <Footer.Link href="#">Terms of Service</Footer.Link>
                 </Footer.Column>
                 <Footer.Column>
                 <Footer.Title>Services</Footer.Title>
@@ -34,6 +34,10 @@ export function FooterContainer() {
                     <Footer.Link href="#"><Icon className="fab fa-youtube" />Youtube</Footer.Link>
                     <Footer.Link href="#"><Icon className="fab fa-twitter" />Twitter</Footer.Link>
                 </Footer.Column>
+            </Footer.Row>
+            <Footer.Row>
+              <Footer.Link href="#"><Icon className="fab fa-facebook-f" />Facebook</Footer.Link>
+              <Footer.Link href="#"><Icon className="fab fa-instagram" />Instagram</Footer.Link>
             </Footer.Row>
             </Footer.Wrapper>
         </Footer>
